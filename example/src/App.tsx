@@ -1,31 +1,18 @@
-import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import NativeBaseElectropunkTheme from 'native-base-electropunk-theme';
+import React from 'react';
+import { NativeBaseProvider, Center, Heading } from 'native-base';
+import { nativebaseElectroPunkTheme } from 'native-base-electropunk-theme';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    NativeBaseElectropunkTheme.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <NativeBaseProvider theme={nativebaseElectroPunkTheme}>
+      <Center flex={1} bg="punky.100">
+        <Heading color="yellow.400" italic>
+          Electropunk{' '}
+          <Heading color="indigo.500" italic>
+            Theme
+          </Heading>
+        </Heading>
+      </Center>
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});
