@@ -1,26 +1,26 @@
-# native-base-electropunk-theme
+# NativeBase v3 ElectroPunk Theme
 
 Electropunk theme for native-base v3
 
-## Installation
+## Dev Env Setup
 
 ```sh
-npm install native-base-electropunk-theme
+git clone https://github.com/rayan1810/native-base-electropunk-theme.git
+cd native-base-electropunk-theme
+yarn
+cd example && yarn && cd ..
+yarn example start
 ```
 
 ## Usage
 
 ```js
-import NativeBaseElectropunkTheme from "native-base-electropunk-theme";
+import { nativebaseElectroPunkTheme } from "native-base-electropunk-theme";
 
 // ...
 
-const result = await NativeBaseElectropunkTheme.multiply(3, 7);
+<NativeBaseProvider theme={nativebaseElectroPunkTheme} >
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
