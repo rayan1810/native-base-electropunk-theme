@@ -1,4 +1,4 @@
-# native-base-electropunk-theme
+# NativeBase v3 ElectroPunk Theme
 
 Electropunk theme for native-base v3
 
