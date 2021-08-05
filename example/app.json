@@ -1,0 +1,22 @@
+{
+  "name": "native-base-electropunk-theme-example",
+  "displayName": "NativeBaseElectropunkTheme Example",
+  "expo": {
+    "name": "native-base-electropunk-theme-example",
+    "slug": "native-base-electropunk-theme-example",
+    "description": "Example app for native-base-electropunk-theme",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
